@@ -1,0 +1,16 @@
+@import "src/style/mixins/mixins";
+
+.fifty-fifty {
+  @include lifebuoy;
+  @include flex-center-center;
+  font-size: 2rem;
+  color: $white;
+
+  &:hover {
+    @include hover-blue-glow-effect
+  }
+
+  &__button {
+    @include lifebuoy-button
+  }
+}

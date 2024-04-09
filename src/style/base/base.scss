@@ -1,0 +1,11 @@
+@import "src/style/variables/variables";
+@import "reset";
+@import "fonts";
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  background: $grey;
+}

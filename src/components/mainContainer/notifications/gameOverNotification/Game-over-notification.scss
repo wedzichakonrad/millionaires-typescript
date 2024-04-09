@@ -1,0 +1,31 @@
+@import "src/style/mixins/mixins";
+
+.game-over-notification {
+
+  &--shown {
+    @include game-end-notification;
+
+    & p {
+      width: 100%;
+      font-weight: 700;
+      text-align: center;
+      padding: 0.4rem;
+      line-height: 1.3rem;
+    }
+
+    & button {
+      margin-top: 2rem;
+      width: 12rem;
+      height: 3rem;
+      border-radius: 50%;
+      color: $white;
+      background: $lifebuoys-gradient;
+      border: 0.15rem solid $white;
+      cursor: pointer;
+
+      &:hover {
+        @include hover-blue-glow-effect
+      }
+    }
+  }
+}

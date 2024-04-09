@@ -1,0 +1,19 @@
+@import "src/style/mixins/mixins";
+
+.phone-friend {
+  @include lifebuoy;
+  @include flex-center-center;
+
+  &:hover {
+    @include hover-blue-glow-effect
+  }
+
+  & img {
+    transform: scale(1.3);
+    filter: invert(100%);
+  }
+
+  &__button {
+    @include lifebuoy-button
+  }
+}

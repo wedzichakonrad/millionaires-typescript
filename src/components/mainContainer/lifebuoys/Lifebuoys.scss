@@ -1,0 +1,13 @@
+@import 'src/style/mixins/mixins';
+
+.lifebuoys {
+  @include flex-center-center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: $medium-screen){
+  .lifebuoys {
+    margin-top: 0;
+  }
+}

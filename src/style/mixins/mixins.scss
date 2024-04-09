@@ -1,0 +1,63 @@
+@import "src/style/variables/variables";
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin lifebuoy {
+  position: relative;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0.8rem;
+  background: $lifebuoys-gradient;
+  border: 0.15rem solid $white;
+}
+
+@mixin lifebuoy-button {
+  position: absolute;
+  border: transparent;
+  background: none;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@mixin white-horizontal-line {
+  position: absolute;
+  height: 0.5rem;
+  background: $white;
+  z-index: 1;
+}
+
+@mixin answers-squares {
+  position: absolute;
+  width: 2.3rem;
+  height: 2.3rem;
+  transform: rotate(45deg);
+  z-index: 0;
+  border-radius: 24% 0 24% 0;
+  border: .5rem solid $white;
+}
+
+@mixin hover-blue-glow-effect {
+  box-shadow: 0 0 2rem 0.5rem $hover-blue-glow;
+}
+
+@mixin wide-screen {
+  max-width: 110px;
+}
+
+@mixin game-end-notification {
+  @include flex-center-center;
+  flex-direction: column;
+  width: 24rem;
+  height: 10rem;
+  background: $question-answers-gradient;
+  border: .5rem solid $white;
+  color: $white;
+}

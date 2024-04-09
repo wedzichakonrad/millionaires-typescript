@@ -1,0 +1,46 @@
+@import "src/style/mixins/mixins";
+
+.main-container {
+
+  &__left {
+    background: $main-container-left-gradient;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 0.5rem solid $white;
+
+    &--darkened {
+      filter: $darkening
+    }
+  }
+
+  &__right {
+    @include flex-center-center;
+    background: $main-container-right-gradient;
+    flex-direction: column;
+
+    &--darkened {
+      filter: $darkening
+    }
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      width: 100%;
+      border: none;
+    }
+
+    &__right {
+      z-index: 2;
+      border-left: 0.5rem solid $white;
+    }
+  }
+}
+
+
+

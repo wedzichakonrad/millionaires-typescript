@@ -1,0 +1,9 @@
+@import "src/style/variables/variables";
+
+.prizes {
+  display: flex;
+  flex-direction: column-reverse;
+  color: $yellow;
+  font-size: 2.2rem;
+  transform: scale(0.9);
+}

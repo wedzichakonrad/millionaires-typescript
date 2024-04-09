@@ -1,0 +1,25 @@
+@import "../../../../style/mixins/mixins";
+
+.phone-Friend-Notification {
+
+  &--shown {
+    @include flex-center-center;
+    width: 32rem;
+    height: 16rem;
+    background: $question-answers-gradient;
+    border: .5rem solid $white;
+    color: $white;
+  }
+
+  &--inner {
+    @include flex-center-center;
+    padding: 0.5rem;
+
+    p {
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.3rem;
+    }
+  }
+}
+

@@ -1,0 +1,33 @@
+@import "src/style/mixins/mixins";
+
+.ask-audience {
+  @include lifebuoy;
+
+  &:hover {
+    @include hover-blue-glow-effect
+  }
+
+  &__button {
+    @include lifebuoy-button;
+  }
+
+  &__img {
+    position: absolute;
+    filter: invert(100%);
+  }
+
+  &__img--first {
+    left: 7%;
+    top: 20%;
+  }
+
+  &__img--second {
+    left: 33.5%;
+    top: 40%;
+  }
+
+  &__img--third {
+    right: 7%;
+    top: 20%;
+  }
+}

@@ -1,0 +1,38 @@
+@import "src/style/mixins/mixins";
+
+.answers-container {
+  margin: 1rem 0;
+
+  &__line {
+    @include white-horizontal-line;
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  .answers-container {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: $big-screen) {
+  .answers-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5rem 0;
+
+    &__line {
+      width: 100%
+    }
+
+    &__line:first-child {
+      top: 3.75rem;
+    }
+
+    &__line:nth-child(2){
+      bottom: 3.75rem;
+    }
+  }
+}

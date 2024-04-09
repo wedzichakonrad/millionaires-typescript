@@ -1,0 +1,65 @@
+@import "src/style/variables/variables";
+
+.single-prize {
+  display: flex;
+  margin: 0.2rem;
+
+  &__white-theme {
+    color: $white;
+  }
+
+  &__number {
+    text-align: right;
+    width: 2.5rem;
+    height: 2rem;
+  }
+
+  &__value {
+    padding-right: 0.5rem;
+  }
+
+  &__diamond {
+    position: relative;
+    margin: 0 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.6rem;
+      right: -0.02rem;
+      border-top: 0.6rem solid transparent;
+      border-bottom: 0.6rem solid transparent;
+      border-right: 0.5rem solid $white;
+      width: 0;
+      height: 0;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0.6rem;
+      left: -0.01rem;
+      border-top: 0.6rem solid transparent;
+      border-bottom: 0.6rem solid transparent;
+      border-left: 0.5rem solid $white;
+      width: 0;
+      height: 0;
+      z-index: 2;
+    }
+  }
+
+  &--guaranteed-stake {
+    background: $light-green;
+    color: $white;
+  }
+
+  &--current-stake {
+    background: $orange;
+    color: $white;
+  }
+
+  &--main-prize {
+    background: ivory;
+  }
+}

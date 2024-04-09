@@ -1,0 +1,37 @@
+@import "src/style/variables/variables";
+
+.logo {
+  position: relative;
+  width: 18rem;
+  margin: 2rem 0;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__animation-box {
+    position: absolute;
+    z-index: 0;
+    width: 9rem;
+    height: 9rem;
+    top: 0.5rem;
+    left: 4.4rem;
+    border-radius: 50%;
+    animation: logo-glow 2s both linear infinite alternate;
+  }
+}
+
+@media screen and (min-width: $big-screen) {
+  .logo {
+    width: 30rem;
+    margin: 3rem 0;
+
+    &__animation-box {
+      width: 15rem;
+      height: 15rem;
+      top: 0.9rem;
+      left: 7.4rem;
+    }
+  }
+
+}
