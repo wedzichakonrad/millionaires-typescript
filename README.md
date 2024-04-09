@@ -1,0 +1,1 @@
+This is my first fully fledged project in js react. A simple millionaires-style game allowing player to progress through 15 questions, use 3 lifebuoys to get some help and restart game after either winning or losing.
